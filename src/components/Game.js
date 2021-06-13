@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 import React from 'react';
 
 import Pancake from './Pancake';
@@ -67,3 +68,31 @@ class Game extends React.Component {
 }
 
 export default Game;
+=======
+import React from 'react';
+
+import Pancake from './Pancake';
+
+class Game extends React.Component {
+
+  constructor(props) {
+    super(props);
+
+    this.state = {
+      time: undefined,
+      pancakes: [],
+      cooked: 0,
+      burnt: 0,
+      raw: 0
+    };
+  }
+
+  // TODO: create a componentDidMount() which will set the current time
+  componentDidMount() {
+  this.setCurrentTime()
+  }
+
+}
+
+export default Game;
+>>>>>>> 786ced52611d853ebbb57f01f46d8048625f6015
